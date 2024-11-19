@@ -33,6 +33,16 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+    - stage:
+        name: deploy
+        identifier: deploy
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: deploytok8
+          project: projectdemo
+          inputs: {}
   identifier: Build_jhttp_1731943351184_Clone
   tags: {}
   name: Build jhttp - Clone
