@@ -1,12 +1,10 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: jhttp-service
-spec:
-  type: LoadBalancer
-  selector:
-    app: jhttp-app
-  ports:
-    - port: 80
-      targetPort: 8080
-      protocol: TCP
+service:
+    name: jhttp-service
+    identifier: jhttpservice
+    spec:
+      selector:  
+        app: jhttp-app
+      ports:
+        - port: 80
+          targetPort: 8888
+          protocol: TCP
