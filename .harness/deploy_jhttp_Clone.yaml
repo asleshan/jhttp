@@ -41,7 +41,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: jhttpservice
+            serviceRef: jhttpserv
           environment:
             environmentRef: harnessdevenv
             deployToAll: false
@@ -72,6 +72,8 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+        delegateSelectors:
+          - kubernetes-delegate
   identifier: deploy_jhttp_Clone
   tags: {}
   name: deploy jhttp - Clone
