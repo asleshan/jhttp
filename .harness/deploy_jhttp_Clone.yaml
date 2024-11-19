@@ -41,7 +41,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: jhttpserv
+            serviceRef: gitjhttp
           environment:
             environmentRef: harnessdevenv
             deployToAll: false
