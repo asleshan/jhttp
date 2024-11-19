@@ -45,4 +45,4 @@ pipeline:
           inputs: {}
   identifier: Build_jhttp_1731943351184_Clone
   tags: {}
-  name: Build jhttp - Clone
+  name: Build and deploy jhttp on k8
