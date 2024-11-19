@@ -1,9 +1,9 @@
 service:
-    name: jhttp-service
-    identifier: jhttpservice
+    name: jhttp-service-git
+    identifier: jhttpservice-git
     spec:
       selector:  
-        app: jhttp-app
+        app: jhttp-app-git
       ports:
         - port: 80
           targetPort: 8888
