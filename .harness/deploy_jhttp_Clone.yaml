@@ -42,6 +42,14 @@ pipeline:
           deploymentType: Kubernetes
           service:
             serviceRef: gitjhttp
+            serviceInputs:
+              serviceDefinition:
+                type: Kubernetes
+                spec:
+                  artifacts:
+                    primary:
+                      primaryArtifactRef: <+input>
+                      sources: <+input>
           environment:
             environmentRef: harnessdevenv
             deployToAll: false
