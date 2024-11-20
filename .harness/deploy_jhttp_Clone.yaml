@@ -18,7 +18,7 @@ pipeline:
           cloneCodebase: true
           platform:
             os: Linux
-            arch: Arm64
+            arch: Amd64
           runtime:
             type: Cloud
             spec: {}
@@ -33,6 +33,11 @@ pipeline:
                     repo: asleshan/demo-test
                     tags:
                       - latest
+          caching:
+            enabled: true
+            paths: []
+          buildIntelligence:
+            enabled: false
   identifier: deploy_jhttp_Clone
   tags: {}
   name: deploy jhttp - Clone
